@@ -2,7 +2,7 @@ import React,{useState} from "react";
 
 function Item({ name, category }) {
 
-const[inCart,setInCart]=useState(false);
+const[inCart, setInCart]=useState(false);
 
 function addToCartOnClick() {
   setInCart((inCart) => !inCart);
