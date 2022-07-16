@@ -10,7 +10,9 @@ function App() {
  const appClass = false ? "App dark" : "App light"
 const [darkMode ,setDarkMode  ]=useState(false)
 
-function onClick(){}
+function handleclick(){
+  setDarkMode((darkMode)=> !darkMode);
+}
 
    return (
     <div className={appClass}>
