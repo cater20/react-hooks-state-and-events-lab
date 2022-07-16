@@ -11,9 +11,12 @@ function addToCartOnClick() {
     <li className={inCart ? "in-cart" :""} >
       <span>{name}</span>
       <span className="category">{category}</span>
-      <button className={inCart ? "remove" : "add"}
-      onClick={addToCartOnClick}>{inCart ? "remove from " :"add to"}</button>
-    </li>
+      <button  className={inCart ? "remove" : "add"}
+      onClick={addToCartOnClick}
+    >
+      {inCart ? "Remove From" : "Add to"} Cart
+    </button>
+  </li>
   );
 }
 
